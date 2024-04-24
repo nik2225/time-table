@@ -1,0 +1,27 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>College Timetable Generator</h1>
+        <form id="scheduleForm">
+            <input type="text" name="subjectName" placeholder="Subject Name" required><br>
+            <input type="text" name="teachingStaff" placeholder="Teaching Staff" required><br>
+            <input type="number" name="lecturesPerWeek" placeholder="Lectures per Week" required><br>
+            <input type="number" name="lectureDuration" placeholder="Lecture Duration (in minutes)" required><br>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="message"></p>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
